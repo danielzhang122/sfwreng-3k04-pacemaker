@@ -14,8 +14,10 @@ Pacemaker firmware modelled in Simulink and Stateflow for McMaster's SFWRENG / M
 | VVI | Ventricle | Ventricle | Inhibit |
 | AOOR / VOOR / AAIR / VVIR | as above | as above | as above, with the pacing rate raised toward a maximum sensor rate as the board's FXOS8700 accelerometer detects activity (tuned by activity threshold, reaction time and recovery time) |
 
-Pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, refractory periods) can be
-sent to the board over serial from the Device Controller-Monitor (DCM), and the board streams readings back.
+The model has serial receive and transmit blocks so a Device Controller-Monitor (DCM) front end could set the
+pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, refractory periods) and read
+data back. The DCM never got fully working, so it isn't included here; the serial side of the model is
+untested end to end.
 
 ## Files
 
