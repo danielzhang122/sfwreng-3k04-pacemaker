@@ -16,8 +16,8 @@ Pacemaker firmware modelled in Simulink and Stateflow for McMaster's SFWRENG / M
 
 The model has serial receive and transmit blocks so a Device Controller-Monitor (DCM) front end could set the
 pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, refractory periods) and read
-data back. The DCM never got fully working, so it isn't included here; the serial side of the model is
-untested end to end.
+data back. The DCM integration never got fully working (neither did it for basically every other group), so it isn't included here; the serial side of the model is
+untested end to end. I also didnt rlly work on the DCM.
 
 ## Files
 
