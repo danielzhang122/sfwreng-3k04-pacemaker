@@ -1,8 +1,8 @@
 # SFWRENG 3K04 Pacemaker
 
 Pacemaker firmware modelled in Simulink and Stateflow for McMaster's SFWRENG / MECHTRON 3K04
-(Software Development), Fall 2025. It was a team project. The model generates C code that runs on an
-**NXP FRDM-K64F** board fitted with the course's pacemaker shield.
+(Software Development), Fall 2025. The model generates C code that runs on an
+**NXP FRDM-K64F** board fitted with the course's pacemaker shield. This was a team project, where most of my contributions were moral support, and trying not to cry over the accelerometer not working.
 
 ## Pacing modes
 
