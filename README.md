@@ -17,12 +17,16 @@ Pacemaker firmware modelled in Simulink and Stateflow for McMaster's SFWRENG / M
 The model has serial receive and transmit blocks so a Device Controller-Monitor (DCM) front end could set the
 pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, refractory periods) and read
 data back. The DCM integration never got fully working (neither did it for basically every other group), so it isn't included here; the serial side of the model is
-untested end to end. I also didnt rlly work on the DCM.
+untested end to end. I also didnt rlly work on the DCM. My teammates' DCM (a Python/Tkinter app that handles logins,
+per-mode parameters and egram plots over serial) lives in
+[bacemkarray/SFWRENG-3k04-Project](https://github.com/bacemkarray/SFWRENG-3k04-Project).
 
 ## Files
 
 - **`Pacemaker.slx`**: the latest model (saved 2025-12-01). Top level: hardware input pins, serial
   `COM_IN` / `COM_OUT`, `Pacemaker Logic` (the Stateflow mode chart), `Pacemaker Outputs` and the LEDs.
+- **`Pacemaker_Deliverable_2_Final.slx`**: the team's final Deliverable 2 model (saved 2025-11-28), the same
+  file that sits in the DCM repo.
 - **`archive/`**: earlier versions, oldest first, kept to show how the model grew:
 
 | File | Saved | What's in it |
