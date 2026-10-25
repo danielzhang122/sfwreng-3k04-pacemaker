@@ -1,0 +1,10 @@
+# Simulink build output and caches
+slprj/
+*_ert_rtw/
+*.slxc
+*.autosave
+*.asv
+*.elf
+*.hex
+*.bin
+*.map
