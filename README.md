@@ -19,7 +19,8 @@ pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, ref
 data back. The DCM integration never got fully working (neither did it for basically every other group), so it isn't included here; the serial side of the model is
 untested end to end. I also didnt rlly work on the DCM. My teammates' DCM (a Python/Tkinter app that handles logins,
 per-mode parameters and egram plots over serial) lives in
-[bacemkarray/SFWRENG-3k04-Project](https://github.com/bacemkarray/SFWRENG-3k04-Project).
+[bacemkarray/SFWRENG-3k04-Project](https://github.com/bacemkarray/SFWRENG-3k04-Project)
+(my fork: [danielzhang122/SFWRENG-3k04-Project](https://github.com/danielzhang122/SFWRENG-3k04-Project)).
 
 ## Files
 
