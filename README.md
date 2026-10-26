@@ -2,7 +2,10 @@
 
 Pacemaker firmware modelled in Simulink and Stateflow for McMaster's SFWRENG / MECHTRON 3K04
 (Software Development), Fall 2025. The model generates C code that runs on an
-**NXP FRDM-K64F** board fitted with the course's pacemaker shield. This was a team project, where most of my contributions were moral support, and trying not to cry over the accelerometer not working.
+**NXP FRDM-K64F** board fitted with the course's pacemaker shield. This was a team project. My part was the rate-adaptive side: reading the board's accelerometer, raising
+the pacing rate when the model detected activity, and easing the rate toward its target asymptotically
+the way the lab showed. That last bit turned out not to be required (we found out after building it),
+but it got us kudos from our TA.
 
 ## Pacing modes
 
@@ -19,7 +22,8 @@ pacing parameters (mode, lower rate, pulse amplitude and width, sensitivity, ref
 data back. The DCM integration never got fully working (neither did it for basically every other group), so it isn't included here; the serial side of the model is
 untested end to end. I also didnt rlly work on the DCM. My teammates' DCM (a Python/Tkinter app that handles logins,
 per-mode parameters and egram plots over serial) lives in
-[bacemkarray/SFWRENG-3k04-Project](https://github.com/bacemkarray/SFWRENG-3k04-Project).
+[bacemkarray/SFWRENG-3k04-Project](https://github.com/bacemkarray/SFWRENG-3k04-Project)
+(my fork: [danielzhang122/SFWRENG-3k04-Project](https://github.com/danielzhang122/SFWRENG-3k04-Project)).
 
 ## Files
 
