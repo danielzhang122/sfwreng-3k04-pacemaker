@@ -8,3 +8,4 @@ slprj/
 *.hex
 *.bin
 *.map
+graphify-out/
