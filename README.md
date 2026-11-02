@@ -7,6 +7,12 @@ the pacing rate when the model detected activity, and easing the rate toward its
 the way the lab showed. That last bit turned out not to be required (we found out after building it),
 but it got us kudos from our TA.
 
+![Simulink diagram of the rate-adaptive pacing subsystem: accelerometer magnitude, a moving standard deviation as the activity level, then a Stateflow chart that sets and ramps the pacing rate](media/pacemaker-rate-adaptive.webp)
+*My part: accelerometer magnitude, moving standard deviation as the activity level, then a Stateflow chart that sets and ramps the pacing rate.*
+
+![Top-level Stateflow chart switching by mode number between the eight pacing modes](media/pacemaker-modes.webp)
+*Top-level Stateflow chart switching between the eight pacing modes.*
+
 ## Pacing modes
 
 | Mode | Paces | Senses | Response to a sensed beat |
